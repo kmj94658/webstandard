@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 테두리 만들기</title>
+  <style>
+    div.img {width: 300px; height:300px;}
+    div.img>img {
+    width: 100%;
+    padding: 5px;
+    border:15px solid grey;
+    border-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtpsr6t6mvUE3tVl-uEaQmFSNlP3H6H_CPSw&usqp=CAU) 30 round;
+    border-radius: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h3>이미지 테두리 만들기</h3>
+  <hr>
+  <div class="img"><img src="https://media.istockphoto.com/photos/the-surprised-cat-the-amazement-of-the-cat-open-your-mouth-in-an-picture-id1240888678?b=1&k=6&m=1240888678&s=170667a&w=0&h=ycjf9uvTzYrRAjMJhD_UqoqpIk3yRu5dH4sTL9GZDN4=" alt=""></div>
+</body>
+</html>
