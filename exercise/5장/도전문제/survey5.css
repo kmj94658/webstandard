@@ -1,0 +1,30 @@
+@charset "utf-8";
+body {
+  background-color: aliceblue;
+  
+}
+
+header>h1 {
+  color: brown;
+  text-align: center;
+}
+
+main {
+  background-color: palevioletred;
+  margin: 10px;
+}
+
+span {
+  color: blue;
+}
+
+p {
+  font-family: 휴먼편지체;
+  font-size: 1em;
+  text-indent: 1em;
+}
+
+footer {
+  background-color: orange;
+  border-radius: 10px;
+}

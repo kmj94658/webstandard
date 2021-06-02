@@ -1,0 +1,28 @@
+@charset "utf-8";
+html,body {margin: 0; padding: 0; height: 100%; width: 100%;}
+
+header {
+  background-color: yellowgreen;
+  height: 20%;
+}
+nav {
+  background-color: orange;
+  float: left;
+  height: 70%;
+  width: 15%;
+}
+section {
+  background-color: paleturquoise;
+  float: left;
+  height: 70vh;
+  width: 85%;
+}
+header>h1 {
+  text-align: center;
+}
+
+footer {
+  clear: both;
+  background-color: plum;
+  height: 10%;
+}
