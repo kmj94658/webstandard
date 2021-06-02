@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*ul>li::after{
+      content: "$";
+    }
+    ul>li::before{
+      content: "$";
+    }*/
+    ul>li {
+      position: relative;
+      cursor: help;
+    }
+    
+    ul>li:hover::after {
+      content: attr(data-tooltip);
+      background-color: tomato;
+      position: absolute;
+      left: 30px; top: -2.2em;
+      border: 1px solid grey;
+      border-radius: 10px;
+      color: honeydew;
+      font-size: 0.8em;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li data-tooltip="툴팁도움말1">1,000</li>
+    <li data-tooltip="툴팁도움말2">2,000</li>
+    <li data-tooltip="툴팁도움말3">3,000</li>
+  </ul>
+</body>
+</html>
