@@ -1,0 +1,182 @@
+@charset "utf-8";
+body{margin:0;}
+    /* 공통 */
+    .container{
+      width:900px; height:100%; margin: 0 auto;
+    }
+    ul {
+      padding-left: 0; list-style-type: none;
+      margin:0;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    /* 최상위 메뉴 */
+    .uppermost {
+      background-color:#c6c8b5; height:30px;
+    }
+    .uppermost .container-upm{
+      background-color:#c6c8b5;
+      width: 100%;
+    }
+    #upm-menu {font-family: 'Yeseva One', cursive; line-height: 30px;}
+
+    #search {float: right;}
+    /* 헤더 */
+    .header{
+      background-color: #c6c8b5; height: 200px;
+    }
+    .header .container-h{
+      width:100%;
+      background-image: url("https://cdn.pixabay.com/photo/2021/05/25/11/49/cherry-blossom-6282234__340.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      position:relative;
+    }
+
+    .header .container-h::after{
+      content: "행복한 목요일!";
+      font-size: 3rem;
+      font-family: 'Song Myung', serif;
+      position:absolute;
+      left:100px;
+      top:30px;
+      color:white;
+      text-shadow: 10px 10px #333;
+    }
+    .header .container-h:hover:after{
+      font-size: 4rem;
+      transform: rotate(-10deg);
+    }
+
+    /* 메뉴 */
+    .nav {
+      background-color: #c6c8b5; height:30px;
+    }
+    .nav ul li {
+      float:left; padding:3px 10px; font-family: 'Yeseva One', cursive; 
+      position: relative;
+      letter-spacing: 0.1em;
+    }
+    .nav ul li:nth-child(1){
+      padding-left: 0;
+    }
+    .nav ul li:hover a{
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    .nav ul li:hover::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      left: 0; top: 1.3em;
+      width: 100%; height: 3px;
+      background-color: #666;
+    }    
+    /* 메인 */
+    .main{
+      background-color: transparent;
+      height: 400px;
+    }
+    .sidebar{
+      width:30%;background-color:#eeeeee; height:100%;
+      float:left;
+    }
+    .content{
+      width:70%;background-color:#f9fbe7;height:100%;
+      float:left;
+    }
+    .content form {
+      width: 50%; margin: 50px auto; color: black;
+    }
+    .content form p {
+      text-align: center;
+      padding: 10px 0;
+    }
+    .content form {
+      color:black;
+      font-weight: bold;
+    }
+    .content form ul li{
+      padding: 5px 0; 
+    }
+    .content form ul li input{
+      box-sizing: border-box;
+      width:90%;
+      vertical-align: top;
+    }
+    .content form ul li button{
+      width:100%;
+      border:none;
+      padding:5px 0;
+      background-color:#bcbcbc;
+      color:white;
+      font-weight: bolder;
+    }
+    /* 푸터 */
+    .footer-contents ul li {padding: 3px 0;}
+    .footer-contents ul li:nth-child(1) {
+      font-weight: bold; padding-bottom: 10px;
+    }
+
+    .footer-contents ul {padding-left: 0; list-style-type: none; margin: 0;}
+    .footer-contents ul li a {text-decoration: none; color: inherit;}
+    
+    .footer-contents {text-transform: uppercase; width: 90%; margin: 0 auto; margin-bottom: 30px;}
+    .footer-contents .footer-contents1,
+    .footer-contents .footer-contents2,
+    .footer-contents .footer-contents3,
+    .footer-contents .footer-contents4 {
+      float: left; margin-right: 20px;
+    }
+    .footer-contents .footer-contents1 {
+      width: 150px; height: 150px; background-color: #f9fbe7; color: black;
+      text-align: center; line-height: 150px;
+    }
+    .footer-contents .emphasis {color: rgb(255, 0, 238); font-weight: bolder;}
+    .footer-contents .tel {font-size: 2em; padding: 20px 0;}
+    .footer-contents .account {color: rgb(0, 102, 255);}
+
+    .footer-contents .highlight-01 {color: white; background-color: blue; padding: 0 3px;}
+    .footer-contents .highlight-02 {color: white; background-color: black; padding: 0 3px;}
+    .copyright .highlight-03 {background-color: grey;}
+    .copyright {text-align: center;}
+    .clearfix::after {
+      content: " "; display: block; clear: both;
+    }
+    /* 유틸 */
+    .clearfix::after{
+      content: " "; display: block; clear:both;
+    }
+    /*아이콘 스타일*/
+    .material-icons {
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;  /* Preferred icon size */
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+
+      color: orangered;
+      font-size: 1.5rem;
+    
+      /* Support for all WebKit browsers. */
+      -webkit-font-smoothing: antialiased;
+      /* Support for Safari and Chrome. */
+      text-rendering: optimizeLegibility;
+    
+      /* Support for Firefox. */
+      -moz-osx-font-smoothing: grayscale;
+    
+      /* Support for IE. */
+      font-feature-settings: 'liga';
+    }
