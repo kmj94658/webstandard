@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <style>
+    
+    ul {list-style-type: none; padding-left: 0;}
+    ul li {padding: 3px 5px; position: relative; box-sizing: border-box; height: 36px;}
+    #joinForm {width: 300px; margin: 50px auto;}
+    ul>li:nth-child(even) {border: 1px solid grey; padding: 5px;}
+    ul>li:nth-child(even) input {border: none; outline: none; box-sizing: border-box; width: 60%;}
+    .highlight {position: absolute; line-height: 26px; right: 8px; color: grey;}
+    ul li label {line-height: 36px;}
+    #joinForm .dob ul li {float: left; width: 31.33%; border: 1px solid grey; padding: 3px 5px;}
+    #joinForm .dob ul li:nth-child(2) {margin: 0 3%;}
+    .clearfix::after {content: " "; display: block; clear: both;}
+    #joinForm .dob {border: none; padding: 0;}
+    #joinForm .dob #month {width: 90%; border: none;}
+    #joinBtn {padding: 10px 0;}
+    #joinBtn button{width: 100%; padding: 5px; border: none; background-color: #03C75A; color: white; font-weight: bold;}
+    #joinBtn button:hover {background-color: rgb(26, 134, 26);}
+  </style>
+</head>
+<body>
+  <div class="wrap-joinForm">
+    <form id="joinForm">
+      <ul>
+        <li><label for="user_id">아이디</label></li>
+        <li><input type="text" id="user_id" maxlength="20"><span class="domain highlight">@naver.com</span></li>
+        <li><label for="user_password">비밀번호</label></li>
+        <li><input type="password" id="user_password" maxlength="12"><i class="fas fa-lock highlight"></i></li>
+        <li><label for="dob">생년월일</label></li>
+        <li class="dob">
+          <ul class="clearfix">
+            <li><input type="text" id="year" placeholder="년(4)"></li>
+            <li><select id="month">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+            </select></li>
+            <li><input type="text" id="day" placeholder="일"></li>
+          </ul>
+        </li>
+        <li id="joinBtn"><button>가입하기</button></li>
+      </ul>
+    </form>
+  </div>
+</body>
+</html>
